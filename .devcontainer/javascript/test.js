@@ -1,27 +1,27 @@
-console.log("Hello World");
+// console.log("Hello World");
 
 
-// var const and let keyword in javascript. 
+// // var const and let keyword in javascript. 
 
-const accoundID=12345; 
+// const accoundID=12345; 
 
-let accountEmail="abcd@gmail.com"
+// let accountEmail="abcd@gmail.com"
 
-var accountPassword="12345"
+// var accountPassword="12345"
 
-let accountState; 
+// let accountState; 
 
-accountCity="mumbai"
+// accountCity="mumbai"
 
-// accondID=2  not allowed. 
+// // accondID=2  not allowed. 
 
-accountEmail="pqrs@gmail.com"
+// accountEmail="pqrs@gmail.com"
 
-accountPassword="ashwniloveumesh"
+// accountPassword="ashwniloveumesh"
 
-accountCity="bihar"
+// accountCity="bihar"
 
-console.table([accountCity,accountState,accountPassword,accountEmail,accoundID])
+// console.table([accountCity,accountState,accountPassword,accountEmail,accoundID])
 
 
 // chai and code  episoe number 5
@@ -37,8 +37,8 @@ console.table([accountCity,accountState,accountPassword,accountEmail,accoundID])
 
 // object
 
-console.log(typeof null);        // object
-console.log(typeof undefined);   // undefined
+// console.log(typeof null);        // object
+// console.log(typeof undefined);   // undefined
 
 
 // episode number 6
@@ -68,23 +68,67 @@ console.log(typeof undefined);   // undefined
 
 
 
-console.log("episode 8 data type conversion ")
+// console.log("episode 8 data type conversion ")
 
-console.log(null==0)
-console.log(null>0)
-console.log(null<=0)
-console.log(null>=0)
+// console.log(null==0)
+// console.log(null>0)
+// console.log(null<=0)
+// console.log(null>=0)
 
-console.log(undefined==0)
-console.log(undefined>=0)
-console.log(undefined<0)
+// console.log(undefined==0)
+// console.log(undefined>=0)
+// console.log(undefined<0)
 
 // strict cheking 
 // ==== check even data type as well 
-// == data type not cheked here
+// // == data type not cheked here
 
-console.log("2"==2)
-console.log("2"===2)
+// console.log("2"==2)
+// console.log("2"===2)
+
+// epidsoe 9
+
+// javascript data type primitive and non primitive. 
+//  primitive (non refrence)
+//  String , Number , Boolean , null , Symbol , undefined , BigInt
+
+// non primitive (refrece)
+// Array, function, Objects. 
+// not primitive  data type returb type are object. 
+// function it self is  object function. 
+
+
+const Id=Symbol(123)
+console.log(Id)
+// output Symbol(123)
+const IDD=Symbol(123)
+console.log(IDD)
+// output Symbol(123)
+console.log(Id===IDD)
+// fasle 
+
+
+const  alphabets =['a','b','c'];
+
+
+const funVariable=function() {
+
+    console.log(" this is my function");
+}
+
+const myObj={
+
+    name:"Umesh Chaurasiya",
+    age:25, 
+    sex:"vergin", 
+    favNumber:69, 
+}
+
+console.log(typeof myObj )
+
+console.log(typeof funVariable )
+
+console.log(typeof alphabets )
 
 
 
