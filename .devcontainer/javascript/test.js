@@ -55,5 +55,38 @@ console.log(typeof undefined);   // undefined
 
 // now for String function String()
 
+// operation ------------------------------------------------------------------------------------------------------------------
+
+// episode 7 
+
+// episode 8 
+// Comparison of datatypes in javascript
+
+// not equality (==) and comparison (=> , <=, >, >) work diffrently
+
+//  comparison convert null to 0  that why  console.log(null<=0) ,console.log(null>=0) is true. 
+
+
+
+console.log("episode 8 data type conversion ")
+
+console.log(null==0)
+console.log(null>0)
+console.log(null<=0)
+console.log(null>=0)
+
+console.log(undefined==0)
+console.log(undefined>=0)
+console.log(undefined<0)
+
+// strict cheking 
+// ==== check even data type as well 
+// == data type not cheked here
+
+console.log("2"==2)
+console.log("2"===2)
+
+
+
 
 
