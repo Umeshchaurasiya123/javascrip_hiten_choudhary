@@ -90,14 +90,14 @@
 
 // javascript data type primitive and non primitive. 
 //  primitive (non refrence)
-//  String , Number , Boolean , null , Symbol , undefined , BigInt
+//  String , Number , Boolean ,null , Symbol , undefined , BigInt
 
 // non primitive (refrece)
 // Array, function, Objects. 
 // not primitive  data type returb type are object. 
 // function it self is  object function. 
 
-
+/*
 const Id=Symbol(123)
 console.log(Id)
 // output Symbol(123)
@@ -129,6 +129,50 @@ console.log(typeof myObj )
 console.log(typeof funVariable )
 
 console.log(typeof alphabets )
+*/
+
+// episode 10  stack and heap memory types/ 
+
+// primitive data types use stack while non primitive data types usess the heap memory data types. 
+
+// in stack you get the copy of data(primitive data types ) and in heap you will get refrence of data.(non primitive data types)
+
+ // stack (copy of data)
+let myname="umesh chaurasiya"
+
+let names=myname;
+
+myname="pres"; 
+
+console.log(myname);
+
+console.log(names);
+
+
+
+// heap (refrence of data)
+
+const objectOne ={
+
+    mail:"abcd@gmail.com",
+    gender:"male", 
+    age:25
+}
+
+const objectTwo =objectOne; 
+
+objectTwo.mail="ashwini@gmail.com"
+
+
+console.log(objectOne);
+
+console.log(objectTwo);
+
+
+// episode 11 string in javascript
+
+
+
 
 
 
