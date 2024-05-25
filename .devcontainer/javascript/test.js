@@ -138,38 +138,74 @@ console.log(typeof alphabets )
 // in stack you get the copy of data(primitive data types ) and in heap you will get refrence of data.(non primitive data types)
 
  // stack (copy of data)
-let myname="umesh chaurasiya"
+// let myname="umesh chaurasiya"
 
-let names=myname;
+// let names=myname;
 
-myname="pres"; 
+// myname="pres"; 
 
-console.log(myname);
+// console.log(myname);
 
-console.log(names);
-
-
-
-// heap (refrence of data)
-
-const objectOne ={
-
-    mail:"abcd@gmail.com",
-    gender:"male", 
-    age:25
-}
-
-const objectTwo =objectOne; 
-
-objectTwo.mail="ashwini@gmail.com"
+// console.log(names);
 
 
-console.log(objectOne);
 
-console.log(objectTwo);
+// // heap (refrence of data)
+
+// const objectOne ={
+
+//     mail:"abcd@gmail.com",
+//     gender:"male", 
+//     age:25
+// }
+
+// const objectTwo =objectOne; 
+
+// objectTwo.mail="ashwini@gmail.com"
+
+
+// console.log(objectOne);
+
+// console.log(objectTwo);
 
 
 // episode 11 string in javascript
+
+
+// string concatination 
+
+let wtf="something" 
+
+let value=69
+
+console.log(wtf+" "+value+" string concatination we are doding ");
+
+// good wat of doign this is string interpolation. 
+
+console.log( `this is good way of doing the string interpolation let me print the value ${wtf} now add some more values ${value}`);
+
+// do use some string function. 
+
+
+const mystrng=new String('first value')
+
+console.log(mystrng)
+console.log ( typeof mystrng)
+
+// this string is obejct  it  contains lot of properties as well as to many method as well in side prototype. 
+
+console.log(mystrng.__proto__)
+
+console.log(mystrng[0])
+
+console.log(mystrng.toLowerCase)
+
+console.log(mystrng.split(' '))
+
+
+
+
+
 
 
 
