@@ -169,38 +169,105 @@ console.log(typeof alphabets )
 // console.log(objectTwo);
 
 
-// episode 11 string in javascript
+// episode 11 string in javascript -------------------------------------
 
 
 // string concatination 
 
-let wtf="something" 
+// let wtf="something" 
 
-let value=69
+// let value=69
 
-console.log(wtf+" "+value+" string concatination we are doding ");
+// console.log(wtf+" "+value+" string concatination we are doding ");
 
-// good wat of doign this is string interpolation. 
+// // good waty of doign this is string interpolation.  
 
-console.log( `this is good way of doing the string interpolation let me print the value ${wtf} now add some more values ${value}`);
+// console.log( `this is good way of doing the string interpolation let me print the value ${wtf} now add some more values ${value}`);
 
-// do use some string function. 
+// // do use some string function. 
 
 
-const mystrng=new String('first value')
+// const mystrng=new String('first value')
 
-console.log(mystrng)
-console.log ( typeof mystrng)
+// console.log(mystrng)
+// console.log ( typeof mystrng)
 
-// this string is obejct  it  contains lot of properties as well as to many method as well in side prototype. 
+// // this string is obejct  it  contains lot of properties as well as to many method as well in side prototype. 
 
-console.log(mystrng.__proto__)
+// console.log(mystrng.__proto__)
 
-console.log(mystrng[0])
+// console.log(mystrng[0])
 
-console.log(mystrng.toLowerCase)
+// console.log(mystrng.toLowerCase)
 
-console.log(mystrng.split(' '))
+// console.log(mystrng.split(' '))
+
+
+
+//  Number and  math in java script episode 12 --------------------------------------------------------------------
+
+// // Numbers 
+
+
+// const score=699
+// console.log(score)
+
+// // specifically telling ki we need number 
+// const balance=new Number(200.8234)
+// console.log(balance)
+
+// console.log(balance.toString().length)
+
+// console.log(balance.toFixed(2))
+
+// console.log(balance.toPrecision(4))
+// console.log(balance.toPrecision(3))
+
+// const hundrest=1000000
+// // based on us dolller 
+// console.log(hundrest.toLocaleString())
+
+// // based on india rupees. 
+// console.log(hundrest.toLocaleString('en-IN'))
+
+// math function in java script --------------------------------------------------------------------------------
+
+// it is an object which contains lot of properties as well as methods. 
+// to look at  avaialble properties as well as method look at the math object inside console in browser. 
+console.log(Math)
+
+// abs to male value positive 
+console.log(Math.abs(-10))
+
+// round function 
+console.log(Math.round(4.5))
+// 5
+console.log(Math.round(4.4))
+//4 
+
+console.log(Math.floor(3.3))
+// 3
+console.log(Math.ceil(3.5))
+// 4
+
+
+// math.randome give value between 0 and 1 
+
+// to get the number betwene perticuelr range 
+
+const max=30;
+const min=20; 
+
+console.log(Math.floor(Math.random()*(max-min+1)+min))
+
+
+
+
+
+
+
+
+
 
 
 
