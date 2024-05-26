@@ -223,7 +223,7 @@ console.log(typeof alphabets )
 // console.log(balance.toPrecision(4))
 // console.log(balance.toPrecision(3))
 
-// const hundrest=1000000
+//const hundrest=1000000
 // // based on us dolller 
 // console.log(hundrest.toLocaleString())
 
@@ -234,20 +234,20 @@ console.log(typeof alphabets )
 
 // it is an object which contains lot of properties as well as methods. 
 // to look at  avaialble properties as well as method look at the math object inside console in browser. 
-console.log(Math)
+//console.log(Math)
 
 // abs to male value positive 
-console.log(Math.abs(-10))
+//console.log(Math.abs(-10))
 
 // round function 
-console.log(Math.round(4.5))
+//console.log(Math.round(4.5))
 // 5
-console.log(Math.round(4.4))
+//console.log(Math.round(4.4))
 //4 
 
-console.log(Math.floor(3.3))
+//console.log(Math.floor(3.3))
 // 3
-console.log(Math.ceil(3.5))
+//console.log(Math.ceil(3.5))
 // 4
 
 
@@ -255,10 +255,115 @@ console.log(Math.ceil(3.5))
 
 // to get the number betwene perticuelr range 
 
-const max=30;
-const min=20; 
+// const max=30;
+// const min=20; 
 
-console.log(Math.floor(Math.random()*(max-min+1)+min))
+// console.log(Math.floor(Math.random()*(max-min+1)+min))
+
+
+// episode number 13 date and time in javascript. -----------------------------------------------------------------------
+
+//let mydate=new Date(); 
+// console.log(mydate)
+// console.log(mydate.toString())
+// console.log(mydate.toDateString())
+// console.log(mydate.toISOString())
+// console.log(mydate.toJSON())
+// console.log(mydate.toTimeString())
+
+//let mydates=new Date(2024,1,24)
+
+//console.log(mydates.toString())
+
+//mydates=new Date("2024-05-24")  // date in yyyy/mm/dd
+//console.log(mydates.toString())
+
+//mydates=new Date("05-24-2024")  // date in mm/dd/yyyy
+//console.log(mydates.toString())
+
+// suppose if we want to find the peticuler time or have to compare those time. 
+// or while designing the quzz. who gave the fastest anser  to desite that. 
+
+// it will retuen the number  of milisecoud form 1st of jan 1970 to till now 
+//const mytime=Date.now(); 
+//console.log(mytime)
+// 171671656184 now finding details from it is somewhat difficult. 
+
+// now suppose the quize start from 2024-may-30 at 12:00 PM. 
+
+//const quizetime= new Date(2024,5,30,12,0,0,0)
+//console.log(quizetime)
+// it will return the stores date which is 2024-05-30 12PM  from 1st jan 1070 in millisecound 
+//quizetime.getTime()
+
+//console.log(quizetime.getTime())
+
+// now we can easilly calulate both of those time and find out which one is faster. 
+
+
+// to convert millisecound into the secound  divide it by 1000 as well as use math.floor function to get rid of decimal points. 
+
+// const newDate=new Date(); 
+
+// console.log(newDate.getDate())
+// console.log(newDate.getMonth())
+
+
+// console.log(`to do the interpolation with date and time so  today date is ${newDate.getDate()} and month is ${newDate.getMonth()}
+// and year is ${newDate.getFullYear()} and time is ${newDate.toTimeString()}
+// `)
+
+
+// newDate.toLocaleString('default',{
+//     weekday:"long",
+//     timeStyle:"medium",
+// })
+
+//console.log(newDate)
+
+// arrays. episode 14 ---------------------------------------------------------------------------------
+
+const numbers=[1,2,3,'abcd']
+
+console.log(numbers)
+
+console.log(numbers[0])
+
+console.log(numbers[numbers.length-1])
+
+
+// another way of creating an array. 
+
+const arraysNumbers=new Array(1,2,3,'wtf')
+
+// array methods
+
+arraysNumbers.push(12)
+arraysNumbers.push(13)
+
+arraysNumbers.pop()
+console.log(arraysNumbers)
+
+// unshif insert the value at the start of array. 
+// but it make performance week as if array contain 100k of elelment then  it will impact the performance. 
+
+arraysNumbers.unshift(12233234)
+console.log(arraysNumbers)
+
+arraysNumbers.shift()
+console.log(arraysNumbers)
+
+// include  and indexof  return boolean
+// join  add all the array element into the string seperate by , 
+
+console.log( typeof arraysNumbers.join())
+
+// slice and splice 
+// slice do not manupulate the original array but splice does. 
+
+
+
+
 
 
 
