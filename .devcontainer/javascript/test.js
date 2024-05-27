@@ -469,10 +469,93 @@ false
 //[ 100, 200, 300 ]
 
 
+// episode number 16 object indept in java script. ----------------------------------------------------------------------------
+
+// object can be declare in two ways 1 literal 2 constructor 
+// the object which is declare  using constructor is called singleton objects. 
+
+// singleton object 
+//Object.create()
+
+// object litirals
+
+// object takes values in key value pair
+// the keys are  alwase string or js process the keys in string. 
 
 
+const jsuser={
+
+  name:"Umesh", 
+  "lastname":"chaurasiya",
+  "full name":"umesh chaurasiya",
+  age:26,
+  location:"Hyderabad",
+  email:"umesh@google.com",
+  lastLogInDate:["Monday","Tuesday","Friday"]
+
+}
+
+// how to access the objectts 
+
+//console.log(jsuser.name)
+//console.log(jsuser.lastname)
+//console.log(jsuser["full name"])
+// output 
+// Umesh
+//chaurasiya
+// Umesh chaurasiya
+// another way  by using index. ***
+
+//console.log(jsuser["email"])
+
+// now symbol is also primitive datatype now  how to add symbol to object and print its key 
+/*
+const mySymbol=Symbol("this is symbol")
+const jssuser={
+
+  name:"Umesh",
+  [mySymbol]:"69696"
+}
+
+*/
+
+//console.log(jssuser[mySymbol])
+
+// output 
+//69696
+
+//console.log(jssuser)
+
+// how to update object 
+//jssuser.name="Umesh Chaurasiya"
+//console.log(jssuser)
+// to freeze the object we can use object.freez
+//Object.freeze(jssuser)
+// now whatever operation  performed on this object will not apply. 
 
 
+// how to add function to obejct. 
+
+
+/*
+jssuser.myfunction = function(){
+
+  console.log("hello hi bye bye")
+}
+
+jssuser.myfunctions= function(){
+  console.log(`hell hi bye bye ${this.name} `)
+}
+
+// how to call the function and get the function refrence 
+// it will give refrece 
+console.log(jssuser.myfunction)
+// it will call the function 
+console.log(jssuser.myfunction())
+
+console.log(jssuser.myfunctions())
+
+*/
 
 
 
