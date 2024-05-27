@@ -363,9 +363,9 @@ console.log(typeof alphabets )
 
 // episode number 15 Array part 2 -------------------------------------------------------------------------------------
 
-const marvel_super_heros=["captain america","thor","natasha","ironman"]
+//const marvel_super_heros=["captain america","thor","natasha","ironman"]
 
-const dc_super_heros=["batman","superman","Aquva man","falsh"]
+//const dc_super_heros=["batman","superman","Aquva man","falsh"]
 
 // push push one arrray inth another and it also modified the originam array 
 
@@ -387,8 +387,8 @@ const dc_super_heros=["batman","superman","Aquva man","falsh"]
 
 // concate mmethod 
 
-let combined_array=marvel_super_heros.concat(dc_super_heros)
-console.log(combined_array)
+//let combined_array=marvel_super_heros.concat(dc_super_heros)
+//console.log(combined_array)
 /*
 [
   'captain america',
@@ -412,8 +412,8 @@ console.log(combined_array)
 
 // more elegent way to do this is by using spread array. 
 
-const spread_array=[...marvel_super_heros,...dc_super_heros]
-console.log(spread_array)
+//const spread_array=[...marvel_super_heros,...dc_super_heros]
+//console.log(spread_array)
 
 /*
 [
