@@ -323,43 +323,153 @@ console.log(typeof alphabets )
 
 // arrays. episode 14 ---------------------------------------------------------------------------------
 
-const numbers=[1,2,3,'abcd']
+//const numbers=[1,2,3,'abcd']
 
-console.log(numbers)
+//console.log(numbers)
 
-console.log(numbers[0])
+//console.log(numbers[0])
 
-console.log(numbers[numbers.length-1])
+//console.log(numbers[numbers.length-1])
 
 
 // another way of creating an array. 
 
-const arraysNumbers=new Array(1,2,3,'wtf')
+//const arraysNumbers=new Array(1,2,3,'wtf')
 
 // array methods
 
-arraysNumbers.push(12)
-arraysNumbers.push(13)
+//arraysNumbers.push(12)
+//arraysNumbers.push(13)
 
-arraysNumbers.pop()
-console.log(arraysNumbers)
+//arraysNumbers.pop()
+//console.log(arraysNumbers)
 
 // unshif insert the value at the start of array. 
 // but it make performance week as if array contain 100k of elelment then  it will impact the performance. 
 
-arraysNumbers.unshift(12233234)
-console.log(arraysNumbers)
+//arraysNumbers.unshift(12233234)
+//console.log(arraysNumbers)
 
-arraysNumbers.shift()
-console.log(arraysNumbers)
+//arraysNumbers.shift()
+//console.log(arraysNumbers)
 
 // include  and indexof  return boolean
 // join  add all the array element into the string seperate by , 
 
-console.log( typeof arraysNumbers.join())
+//console.log( typeof arraysNumbers.join())
 
 // slice and splice 
 // slice do not manupulate the original array but splice does. 
+
+// episode number 15 Array part 2 -------------------------------------------------------------------------------------
+
+const marvel_super_heros=["captain america","thor","natasha","ironman"]
+
+const dc_super_heros=["batman","superman","Aquva man","falsh"]
+
+// push push one arrray inth another and it also modified the originam array 
+
+//console.log(marvel_super_heros.push(dc_super_heros))
+
+//console.log(marvel_super_heros)
+
+// output 
+/*
+[
+    'captain america',
+    'thor',
+    'natasha',
+    'ironman',
+    [ 'batman', 'superman', 'Aquva man', 'falsh' ]
+  ]
+
+*/
+
+// concate mmethod 
+
+let combined_array=marvel_super_heros.concat(dc_super_heros)
+console.log(combined_array)
+/*
+[
+  'captain america',
+  'thor',
+  'natasha',
+  'ironman',
+  [ 'batman', 'superman', 'Aquva man', 'falsh' ]
+]
+@Umeshchaurasiya123 ➜ /workspaces/javascrip_hiten_choudhary (main) $ node .devcontainer/javascript/test.js
+[
+  'captain america',
+  'thor',
+  'natasha',
+  'ironman',
+  'batman',
+  'superman',
+  'Aquva man',
+  'falsh'
+]
+*/
+
+// more elegent way to do this is by using spread array. 
+
+const spread_array=[...marvel_super_heros,...dc_super_heros]
+console.log(spread_array)
+
+/*
+[
+  'captain america',
+  'thor',
+  'natasha',
+  'ironman',
+  'batman',
+  'superman',
+  'Aquva man',
+  'falsh'
+]
+*/
+
+//const another_array=[1,2,3,[4,5,6,[7,8,[9,10,[11]]]]]
+
+//  we can exact all thsoe array into sigle array by usign .flate(infinity). infinity mentioned the level of array. 
+// can be put 1 , 2 up to level we neeed to extract. 
+
+//const output_of_array=another_array.flat(Infinity)
+
+//console.log(output_of_array)
+
+// output 
+/*
+[
+   1, 2, 3, 4,  5,
+   6, 7, 8, 9, 10,
+  11
+]
+*/
+
+//console.log(Array.isArray("umesh"))
+//console.log(Array.from("Umesh"))
+/*
+false
+[ 'U', 'm', 'e', 's', 'h' ]
+*/
+//console.log(Array.from({name:"umesh chaurasiya",
+//age:26, 
+//gender:"male"
+//}))
+
+// output []  // interesting case 
+
+//let score1=100; 
+//let score2=200;
+//let score3=300; 
+
+//console.log(Array.of(score1,score2,score3))
+
+// output 
+//[ 100, 200, 300 ]
+
+
+
 
 
 
