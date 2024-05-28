@@ -678,6 +678,63 @@ email:"abcd@gmail.com"
 */
 // object de center and json api info // episode 18  ------------------------------------------------------------------------------
 
+// noye props stand for property not parameters 
+// in propes stand property and property stand for key in object. 
+
+// object destructoring 
+
+const course={
+
+  courseName:"JavaScript course", 
+  fee:"free", 
+  Instructor:"hitesh choudhary"
+}
+
+
+// now to access the property of this course objecr we can use . or there by using object de structor
+
+console.log(course.courseName)
+// or we can use 
+// output javaScript course
+
+const{courseName,Instructor}=course
+
+console.log(courseName)
+console.log(Instructor)
+// output javaScript course
+// hitesh choudhary
+// even we can give diffrnet name to  property 
+
+const{Instructor:teacher}=course
+console.log(teacher)
+// output hitesh choudhary 
+
+
+// what is json 
+// json is  nothing but  responce which we get from the  backend or server  from AIP. 
+// json is 99percent similer to object. 
+// only diffrence is in json key are in ""(double quotes)
+// this json does not have any name  as compare to object
+// this api resopnce is in object form
+/*
+{
+
+  "name":"Umesh Ramharakh Chaurasiya", 
+  "age":26, 
+  "Gender":"male"
+
+}
+*/
+
+// certain time we get the api respoce in array of object. 
+
+// [{},{},{}]
+
+
+
+
+
+
 
 
 
