@@ -559,8 +559,124 @@ console.log(jssuser.myfunctions())
 
 
 
+// object in javascript part 2 episeode 17 ------------------------------------------------------------------------------------
+/*
+const tinderUser={}
+
+tinderUser.id="abc123"
+tinderUser.name="fuckboy"
+tinderUser.isLogedIn=false
+
+console.log(tinderUser)
+
+// nesting of objects 
+
+const requlerUsers={
+  email:"someOne@gmail.com",
+  fullName:{
+    userName:{
+    firstName:"Umesh", 
+    lastName:"Chaurasiya"
+
+    }
+  } 
+}
+
+console.log(requlerUsers.fullName)
+// output  { userName: { firstName: 'Umesh', lastName: 'Chaurasiya' } }
+
+// this is called object chaining
+console.log(requlerUsers.fullName.userName.firstName)
+
+// this is used when we are not confirm ki wther this property is exist or not in object. we use if  else in that case. 
+console.log(requlerUsers.fullName?.userName.firstName)
 
 
+// how to  combine one or more object 
+
+const obj1={1:"a",2:"b"}
+
+const obj2={3:"a",4:"b"}
+
+const obj3={obj1, obj2}
+console.log(obj3)
+// it had given object inside another object
+// { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
+
+// to solve this 
+// we use assign or spread 
+
+// here first argument is target object and rest are source 
+// so it will take all the key value pair from source object and insert it into target object  so target object get modified 
+const obj4=Object.assign({},obj1,obj2)
+
+console.log(obj4)
+// { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+
+// use of spred operator
+const obj5={...obj1,...obj2}
+console.log(obj5)
+// { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+
+// now when we get data from database is it useally  an array of object 
+
+const arrayObject=[
+{
+  name:"umesh",
+  email:"abcd@gmail.com"
+},
+
+{
+name:"um",
+email:"abcd@gmail.com"
+}
+,
+{
+  name:"uesh",
+  email:"abcd@gmail.com"
+}
+ ,
+{
+name:"mesh",
+email:"abcd@gmail.com"
+}
+]
+
+// how to access a perticuler object 
+//console.log(arrayObject[0].name)
+// umesh
+
+// to loop throught this 
+
+// now how to find the all the keys of perticuler object 
+
+//console.log(Object.keys(tinderUser))
+//  output 
+// [ 'id', 'name', 'isLogedIn' ]
+
+
+//console.log(Object.values(tinderUser))
+// output 
+//[ 'abc123', 'fuckboy', false ]
+
+// entris 
+
+//console.log(Object.entries(tinderUser))
+// output 
+// create an array of object. 
+// [ [ 'id', 'abc123' ], [ 'name', 'fuckboy' ], [ 'isLogedIn', false ] ]
+
+// to find whther perticuler property  is exist inside object or not. 
+// property stand for  key 
+
+//console.log(tinderUser.hasOwnProperty('name'))
+
+// output  true
+
+// when we say property is inumerable we  stand to tell ki whether it is repetable , we can apply loop or not. 
+
+*/
+// object de center and json api info // episode 18  ------------------------------------------------------------------------------
 
 
 
