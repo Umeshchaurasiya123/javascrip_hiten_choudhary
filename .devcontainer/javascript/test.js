@@ -830,7 +830,63 @@ console.log(loginUserName())
   */
 // fuction with object and array in javascript part 20---------------------------------------------------------------------
 
+/*
+// now suppose  we have to pass dynamic number of argumen to function. 
+// or we don't know how many argent will be going to pass this function so for that we use rest opratir 
+
+// example of rest and spred both syntax is similer 
+// ...variablename
+
+function calCulatePrise(...var1){
+  return var1; 
+}
+
+console.log(calCulatePrise(100,200,300,2000))
+// [ 100, 200, 300, 2000 ]
+
+function calCulatePrises(var1,var2,...var3){
+  return var3; 
+}
+console.log(calCulatePrises(100,200,300,2000))
+// output [ 300, 2000 ]
 
 
+// pasing an object to function as argement 
 
+
+const user={
+  userName:"umesh",
+  prise:169
+
+}
+
+function handleObject(anyObject){
+  console.log(`Hi ${anyObject.userName} and prise is ${anyObject.prise} `)
+}
+
+//handleObject(user)
+// Hi umesh and prise is 169 
+
+handleObject({
+
+  userName:"hitesh",
+  prise:269
+})
+// output
+//Hi hitesh and prise is 269 
+
+
+// passing array to function 
+
+const myArray=[100,200,300,400,500]
+
+function handleArray(arg1){
+
+  return arg1[0]
+}
+
+
+console.log(handleArray(myArray))
+// 100
+*/
 
