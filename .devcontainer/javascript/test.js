@@ -677,9 +677,12 @@ email:"abcd@gmail.com"
 
 */
 // object de center and json api info // episode 18  ------------------------------------------------------------------------------
+/*
 
-// noye props stand for property not parameters 
+// note props stand for property not parameters 
 // in propes stand property and property stand for key in object. 
+
+
 
 // object destructoring 
 
@@ -732,21 +735,100 @@ console.log(teacher)
 
 
 
+// function and paramet and memory management in javascript part 19--------------------------------------------------------------------------------------
+/*
+
+function sayMyname(){
+console.log("U")
+console.log("M")
+console.log("E")
+console.log("S")
+console.log("H")
+}
+// this is refrece of function. 
+//sayMyname
+// this is calling the function or exectuing the function
+//sayMyname()
+
+function addTwoNumber(number1,number2){
+  console.log(number1+number2)
+  //console.log(number1)
+  //console.log(number2)
+
+}
+
+//addTwoNumber()
+
+//output 
+//NaN
+//undefined
+//undefined
+
+addTwoNumber(6,9)
+// 15
+
+addTwoNumber(3,"2-1-0")
+// 32-1-0
+
+addTwoNumber(null,null)
+// output 0  // interesting cases 
+
+// when function does not return anythig 
+
+let output=addTwoNumber(3,6)
+console.log(output)
+// undefined as function does not return anything so we are shorted. 
+// here scope of number1 number2 and number3 are local. i.e in block only 
+function add3NumberWithRetuern(number1,number2,number3){
+  return number1+number2+number3
+}
+
+let result=add3NumberWithRetuern(3,6,9)
+console.log(result)
+// output 18
+
+function loginUserMessage(user){
+
+  return `Hi ${user} has just login`
+}
+
+//let message=loginUserMessage("Umesh")
+//console.log(message)
+// output Hi Umesh has just login
+
+//let message=loginUserMessage()
+//console.log(message)
+// output 
+// Hi undefined has just login
+
+let message=loginUserMessage(null)
+console.log(message)
+// output
+// Hi null has just login
+
+// undefined is consider to be an false value 
+
+function loginUserName(username){
+
+  if(!username){
+    console.log("please enter your username")
+    return
+  }
+
+  return `Hi ${username} has just login`
+}
 
 
+console.log(loginUserName())
+//output 
+//please enter your username
+//undefined
 
-
-
-
-
-
-
-
-
-
-
-
-
+// to pass default valuse in parameter  oginUserName(username="sam")
+// so if username is not provided in that case default value will passs to it. 
+// And if argument passs  then default value will overwrite. 
+  */
+// fuction with object and array in javascript part 20---------------------------------------------------------------------
 
 
 
