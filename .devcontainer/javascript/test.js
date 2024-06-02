@@ -890,3 +890,92 @@ console.log(handleArray(myArray))
 // 100
 */
 
+
+// globla and local scope in javascript part 21 ----------------------------------------------------------------------------------
+/*
+
+// do not use var vaiable as it is cause problem in scoping 
+
+// use let and const
+// thete is globla scope and local scope. 
+
+
+let a=10; 
+const b=20; 
+let c=39
+
+if(true){
+
+  // updating the value of global scope variable. 
+  // inicializing local a and local b. 
+
+  c=30
+  let a=30;
+  console.log(`inner a ${a}`) 
+  const b=50
+  console.log(`inner b ${b}`) 
+
+}
+
+console.log(`outer a ${a}`) 
+console.log(`outer b ${b}`) 
+console.log(`outer c ${c}`) 
+
+//inner a 30
+//inner b 50
+//outer a 10
+//outer b 20
+//outer c 30
+
+*/
+
+
+// SCOPE LEVEL AND MINI HOISTING IN JAVA SCRIPT  LECTURE 22----------------------------------------------------------------------
+/*
+
+function one (){
+
+  const username="Umesh Chaurasiya "
+
+  function two(){
+
+    const website="youtube";
+
+    console.log(username+website)
+  }
+
+  two()
+}
+
+one()
+
+// output Umesh Chaurasiya youtube
+
+// this is also call closer which is insider function can access outside variable. 
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Interesting++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// here function addOne can be called form any location  ithere the before function defination or after  
+
+addOne(6)
+
+function addOne(num){
+
+  return num+1;
+}
+
+addOne(5)
+
+
+//number2(6) // Cannot access 'number2' before initialization 
+
+// function cab be called aftert the inicialization 
+const number2=function addTwo(num){
+
+    return num+2;
+
+}
+
+number2(6)
+
+*/
