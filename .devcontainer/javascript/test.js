@@ -1074,4 +1074,47 @@ console.log(addTow(6,9))
 */
 
 
+//iife Immediately Invoked Function Expressions IIFE part 24 --------------------------------------------------------------------
+/*
+// jai sai hi function lia use turant execute kar wana. 
+// why we need iife 
+//1 becouse to  make datebase connection. as soon as our application starts database conection  establish. 
+// 2 to avaoild  variable pollution. As  global variable can cause problem in locla function to avaoid that iife  is usead. 
+
+// ()() here 1st round braket indicate function definition and 2nd itis execution 
+
+// named iife. 
+
+// (function chaiOne(){
+// console.log("DB connected")
+// })()
+
+
+(function chai(){
+
+  console.log("DB connected");
+})();
+
+// output DB connected. 
+
+// notte some time iife function give you error as ; is needed at the end. As 
+// iife function yai invoke to ho gaya but he does not know where to stop which is causing the problem. 
+// so ; at the end of function call is nessary. 
+
+
+((name)=>{
+  console.log(`DB 2 connected naem= ${name} `)
+
+})("Umesh") 
+*/
+
  
+
+
+
+
+
+
+
+
+
