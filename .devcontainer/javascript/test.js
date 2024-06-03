@@ -979,3 +979,99 @@ const number2=function addTwo(num){
 number2(6)
 
 */
+
+
+// episode 23  this and arrow function in java script. ------------------------------------------------------------------
+
+/*
+// context only work on object not on function. 
+
+//  this keyword reperest the current context or scope {}. 
+
+// in object or progrma current context represent {} whatever value does it hold is represent current context. 
+
+const user={
+
+  username:"Umesh", 
+  price :123, 
+
+  welcomeMessage:function(){
+
+    console.log(`hi ${this.username} user has logedIn`)
+
+    //console.log(this)
+
+  }
+
+}
+
+user.welcomeMessage()
+
+user.username="hitesh"
+
+user.welcomeMessage()
+
+//hi Umesh user has logedIn
+//hi hitesh user has logedIn
+
+console.log(this)
+// {} means in  gobal environment in node js current context is {}
+// in  browser  global environemtn is window object. where we get lot of event like alert, prototype etc. 
+
+// in browser the global object is window onject 
+// in node js the global object is {} empty object 
+
+
+//hi Umesh user has logedIn
+//{
+ // username: 'Umesh',
+//  price: 123,
+//  welcomeMessage: [Function: welcomeMessage]
+//}
+//hi hitesh user has logedIn
+//{
+ // username: 'hitesh',
+ // price: 123,
+ / /welcomeMessage: [Function: welcomeMessage]
+//}
+
+
+
+
+const chaiAndCode=function(){
+
+  let username="Umesh"
+  console.log(this.username)
+}
+
+//chaiAndCode()  error 
+// we can not use this insode the fuction as this can only be acceesible in object. 
+// if onject contain any function than we can use this on that function. 
+
+// arrow function
+
+const chaiAndCodes=()=>{
+
+  console.log("this is arrow function")
+}
+chaiAndCodes()
+
+ // some variation of arrow function 
+
+ // const addTow=(num1,num2)=>{ return num1+num2}
+
+//const addTow=(num1,num2)=> num1+num2
+ 
+//const addTow=(num1,num2)=> (num1+num2)
+// above all the four variation are same 
+
+const addTow=()=> ({name:"Umesh"}) 
+// this  function returns the object. 
+
+
+console.log(addTow(6,9))
+
+*/
+
+
+ 
