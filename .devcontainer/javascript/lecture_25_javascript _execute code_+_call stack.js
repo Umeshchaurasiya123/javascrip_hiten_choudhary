@@ -1,5 +1,5 @@
 
-// How does javascript execute code + call stack
+// How does javascript execute code + call stack lecture 25. 
 
 // so jo bhi hum code likhte hai .js file mai. 
 // 1st javascript use global execution context (global environent is prepared) prepate banata hai. 
